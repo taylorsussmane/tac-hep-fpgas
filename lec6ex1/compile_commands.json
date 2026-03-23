@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/scratch/tsussman/lec6ex1",
+    "arguments": [
+      "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/scratch/tsussman/homework2/lec6ex1.cpp"
+    ],
+    "file": "/scratch/tsussman/homework2/lec6ex1.cpp"
+  }
+]

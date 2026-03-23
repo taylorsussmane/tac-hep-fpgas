@@ -1,0 +1,10 @@
+{
+  "workspaceRoot": "/scratch/tsussman",
+  "mapping": {
+    "homework2/lec6ex1.cpp": "lec6ex1",
+    "matrix_add_tb.cpp": "matrix_add",
+    "matrix_mult_tb.cpp": "matrix_mult",
+    "matrix_mult.cpp": "matrix_mult",
+    "matrix_add.cpp": "matrix_add"
+  }
+}

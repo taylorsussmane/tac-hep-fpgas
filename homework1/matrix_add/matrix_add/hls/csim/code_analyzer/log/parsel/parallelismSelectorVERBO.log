@@ -1,0 +1,603 @@
+parallelismSelector::VERBO: Summary of inputs: 
+parallelismSelector::VERBO: Output directory: "/scratch/tsussman/matrix_add/matrix_add/hls/csim/code_analyzer/output"
+parallelismSelector::VERBO: spec:0:0: info: Will use basepath at location /scratch/tsussman/matrix_add
+parallelismSelector::VERBO: FPGA clock frequency is set to 100 MHz
+parallelismSelector::VERBO: Will use user-driven complete partitioning settings
+parallelismSelector::VERBO: Arrays with less than or equal to 4 elements that appear in the codegen directives will be completely partitioned
+parallelismSelector::VERBO: spec:0:0: info: Will use IR Module file at location /scratch/tsussman/matrix_add/matrix_add/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc
+parallelismSelector::VERBO: FPGA frequency: 100000000 Hz
+parallelismSelector::VERBO: Using FPGA frequency for HLS estimations: 100000000 Hz
+parallelismSelector::VERBO: [Model Builder] Extracting logic model object from: /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/vcxx/data/platform/logic/virtexuplus.logic
+parallelismSelector::VERBO: Using Program Model file: /scratch/tsussman/matrix_add/matrix_add/hls/csim/code_analyzer/output/reduced_programmodel.app
+parallelismSelector::VERBO: Device characteristics: Area -- (LUTs: 1182240, FFs: 2364480, DSPs: 6840, BRAMs: 4320, URAMs: 960)
+parallelismSelector::VERBO: Maximum area for the hardware functions: AreaConstraint -- (LUTs: 1182240, FFs: 2364480, DSPs: 6840, BRAMs: 4320, URAMs: 960)
+parallelismSelector::VERBO: Code Analyzer Id: 0
+parallelismSelector::VERBO: Dataflow Hardware Function: _Z10matrix_addPA10_iS0_S0_
+parallelismSelector::VERBO: Adding outline as primary transformation
+parallelismSelector::VERBO: RecipeFile: "/scratch/tsussman/matrix_add/matrix_add/hls/csim/code_analyzer/.internal/dataflow/0/recipe.json"
+parallelismSelector::VERBO: Applying transformation: (region_outline)
+parallelismSelector::VERBO: Applying transformation: (outline)
+parallelismSelector::VERBO: Alias Equivalence: (Var <- { Pointees })
+                              15 <- {15}
+                              16 <- {16}
+                              17 <- {17}
+                              18 <- {15}
+                              19 <- {16}
+                              20 <- {17}
+                            
+parallelismSelector::VERBO: Variable Infos:
+parallelismSelector::VERBO:     'A' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 15
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 213
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 10,  10 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'B' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 16
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 213
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 10,  10 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'C' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 17
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 213
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 10,  10 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'A' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 18
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 214
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 10,  10 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'B' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 19
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 214
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 10,  10 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'C' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 20
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 214
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 10,  10 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO: Equivalence table
+                             Object with value: 15 is mapped to the object with value: 15
+                             Object with value: 16 is mapped to the object with value: 16
+                             Object with value: 17 is mapped to the object with value: 17
+                             Object with value: 18 is mapped to the object with value: 15
+                             Object with value: 19 is mapped to the object with value: 16
+                             Object with value: 20 is mapped to the object with value: 17
+                            
+parallelismSelector::VERBO: Creating MAs for _GLOBAL__sub_I_matrix_add_tb.cpp
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init
+parallelismSelector::VERBO: Creating MAs for _GLOBAL__sub_I_matrix_add.cpp
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init.2
+parallelismSelector::VERBO: Creating MAs for _GLOBAL__sub_I_matrix_add.cpp.5
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init.6
+parallelismSelector::VERBO: Creating MAs for _Z10matrix_addPA10_iS0_S0_
+parallelismSelector::VERBO: Creating MAs for Outline_T3_F213_R2_Loop
+parallelismSelector::VERBO:     HMA (VariableId 18)  %i6 = load i32, i32* %arrayidx5, align 4, !dbg !975, !tbaa !976 Scev: {{%A,+,40}<nuw><%for.body>,+,4}<nuw><%for.body3>: IndexFunction: 0 1 10
+parallelismSelector::VERBO:     HMA (VariableId 19)  %i10 = load i32, i32* %arrayidx9, align 4, !dbg !980, !tbaa !976 Scev: {{%B,+,40}<nuw><%for.body>,+,4}<nuw><%for.body3>: IndexFunction: 0 1 10
+parallelismSelector::VERBO:     HMA (VariableId 20)  store i32 %add, i32* %arrayidx13, align 4, !dbg !983, !tbaa !976 Scev: {{%C,+,40}<nuw><%for.body>,+,4}<nuw><%for.body3>: IndexFunction: 0 1 10
+parallelismSelector::VERBO: Nesting structure:
+                            +- Loop with id 5, HasPerfectlyNestedSubLoop=1, HasComputableTotalTC=1, TripCount= 10, StaticTripCountUpperBound= 10, MaxDynamicTripCount= 10, MinDynamicTripCount= 10, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=/scratch/tsussman/matrix_add/../matrix_add.cpp:6:5
+                               +- Loop with id 6, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=1, TripCount= 10, StaticTripCountUpperBound= 10, MaxDynamicTripCount= 10, MinDynamicTripCount= 10, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=/scratch/tsussman/matrix_add/../matrix_add.cpp:7:9, Vars=15,16,17,
+                            
+parallelismSelector::VERBO: Nesting structure after dynamic trip count update:
+                            +- Loop with id 5, HasPerfectlyNestedSubLoop=1, HasComputableTotalTC=1, TripCount= 10, StaticTripCountUpperBound= 10, MaxDynamicTripCount= 10, MinDynamicTripCount= 10, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=/scratch/tsussman/matrix_add/../matrix_add.cpp:6:5
+                               +- Loop with id 6, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=1, TripCount= 10, StaticTripCountUpperBound= 10, MaxDynamicTripCount= 10, MinDynamicTripCount= 10, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=/scratch/tsussman/matrix_add/../matrix_add.cpp:7:9, Vars=15,16,17,
+                            
+parallelismSelector::VERBO: Function 'matrix_add' not inlined as per top-levels
+parallelismSelector::VERBO: Function 'Outline_T3_F213_R2_Loop' not inlined as per dataflow task
+parallelismSelector::VERBO: Nesting structure after static trip count upper bound calculation for symbolically bounded loops:
+                            +- Loop with id 5, HasPerfectlyNestedSubLoop=1, HasComputableTotalTC=1, TripCount= 10, StaticTripCountUpperBound= 10, MaxDynamicTripCount= 10, MinDynamicTripCount= 10, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=/scratch/tsussman/matrix_add/../matrix_add.cpp:6:5
+                               +- Loop with id 6, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=1, TripCount= 10, StaticTripCountUpperBound= 10, MaxDynamicTripCount= 10, MinDynamicTripCount= 10, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=/scratch/tsussman/matrix_add/../matrix_add.cpp:7:9, Vars=15,16,17,
+                            
+parallelismSelector::VERBO: LCDs collected in function '_GLOBAL__sub_I_matrix_add_tb':
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO: LCDs collected in function '_GLOBAL__sub_I_matrix_add':
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO: LCDs collected in function '_GLOBAL__sub_I_matrix_add':
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO: LCDs collected in function 'matrix_add':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T3_F213_R2_Loop':
+parallelismSelector::VERBO:     LoopId 5 with label '--', hasRAW: 0
+parallelismSelector::VERBO:     LoopId 6 with label '--', hasRAW: 0
+parallelismSelector::VERBO: Max iterations for loop 5 are 10
+parallelismSelector::VERBO:  - loop 5 is  /scratch/tsussman/matrix_add/../matrix_add.cpp:6:5
+parallelismSelector::VERBO: Max iterations for loop 6 are 10
+parallelismSelector::VERBO:  - loop 6 is  /scratch/tsussman/matrix_add/../matrix_add.cpp:7:9
+parallelismSelector::VERBO: Partitioning variable 'A' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 15
+parallelismSelector::VERBO: Partitioning variable 'B' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 16
+parallelismSelector::VERBO: Partitioning variable 'C' /scratch/tsussman/matrix_add/../matrix_add.cpp:4:0 VariableId 17
+parallelismSelector::VERBO: Initial branch:
+                            FunctionPipelineTopLevel: Maybe
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName C) (VariableId 17)
+                            +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 5)
+                               +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 6)
+                            
+parallelismSelector::VERBO: Initial branch after first round of constraints:
+                            FunctionPipelineTopLevel: Maybe
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName C) (VariableId 17)
+                            +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 5)
+                               +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 6)
+                            
+parallelismSelector::VERBO: Nesting structure after user pragma constraints:
+                            +- Loop with id 5, HasPerfectlyNestedSubLoop=1, HasComputableTotalTC=1, TripCount= 10, StaticTripCountUpperBound= 10, MaxDynamicTripCount= 10, MinDynamicTripCount= 10, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=/scratch/tsussman/matrix_add/../matrix_add.cpp:6:5
+                               +- Loop with id 6, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=1, TripCount= 10, StaticTripCountUpperBound= 10, MaxDynamicTripCount= 10, MinDynamicTripCount= 10, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=/scratch/tsussman/matrix_add/../matrix_add.cpp:7:9, Vars=15,16,17,
+                            
+parallelismSelector::VERBO: Initial branch after applying user pragma constraints:
+                            FunctionPipelineTopLevel: Maybe
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName C) (VariableId 17)
+                            +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 5)
+                               +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 6)
+                            
+parallelismSelector::VERBO: Initial branch after applying Xilinx constraints:
+                            FunctionPipelineTopLevel: Maybe
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, 2, 5 complete, dim 1: cyclic 1, 2, 5 complete} (VariableName C) (VariableId 17)
+                            +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 5)
+                               +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 6)
+                            
+parallelismSelector::VERBO: DataflowConstrainer: Constraining Func/Loop with Id 213
+parallelismSelector::VERBO: DataflowConstrainer: Constrained: VarId=15
+parallelismSelector::VERBO: DataflowConstrainer: Constrained: VarId=16
+parallelismSelector::VERBO: DataflowConstrainer: Constrained: VarId=17
+parallelismSelector::VERBO: Initial branch after applying dataflow constraints:
+                            FunctionPipelineTopLevel: No
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName C) (VariableId 17)
+                            +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 5)
+                               +- pipeline, unroll with factors 1, 2, 5, 10, unroll/pipeline with factors 2, 5 (LoopId 6)
+                            
+parallelismSelector::VERBO: Removing unroll factor 2 from loop 5 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 5 from loop 5 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 2 from loop 6 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 5 from loop 6 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing reshape options from the design space because optimizing reshape is disabled
+                            
+parallelismSelector::VERBO: Initial branch after applying heuristic constraints:
+                            FunctionPipelineTopLevel: No
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName C) (VariableId 17)
+                            +- pipeline, unroll with factors 1, 10, unroll/pipeline with factors 2, 5 (LoopId 5)
+                               +- pipeline, unroll with factors 1, 10, unroll/pipeline with factors 2, 5 (LoopId 6)
+                            
+parallelismSelector::VERBO: Initial branch after applying second round of Xilinx constraints:
+                            FunctionPipelineTopLevel: No
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName C) (VariableId 17)
+                            +- pipeline, unroll with factors 1, 10, unroll/pipeline with factors 2, 5 (LoopId 5)
+                               +- pipeline, unroll with factors 1, 10, unroll/pipeline with factors 2, 5 (LoopId 6)
+                            
+parallelismSelector::VERBO: Initial branch after PerfEst evaluation constraints:
+                            FunctionPipelineTopLevel: No
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName C) (VariableId 17)
+                            +- unroll with factors 1 (LoopId 5)
+                               +- unroll with factors 1 (LoopId 6)
+                            
+parallelismSelector::VERBO: Initial constrained branch:
+                            FunctionPipelineTopLevel: No
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName A) (VariableId 15)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName B) (VariableId 16)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableName C) (VariableId 17)
+                            +- unroll with factors 1 (LoopId 5)
+                               +- unroll with factors 1 (LoopId 6)
+                            
+parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
+                            Setting Space: FunctionPipelineTopLevel: No
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 15)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 16)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 17)
+                            +- unroll with factors 1 (LoopId 5)
+                               +- unroll with factors 1 (LoopId 6)
+                            
+parallelismSelector::VERBO: Calculating latency for top level hw function: matrix_add
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(3 F=214) (18->15)(19->16)(20->17)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 18 is mapped to the object with value: 15
+                             Object with value: 19 is mapped to the object with value: 16
+                             Object with value: 20 is mapped to the object with value: 17
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body3" (LoopId 6):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 6
+parallelismSelector::VERBO:          - EndCycles: for.body3 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: for.body3
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:6 V:15{1: 0}
+parallelismSelector::VERBO:       L:6 V:16{1: 0}
+parallelismSelector::VERBO:       L:6 V:17{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:6{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:60
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 5):
+parallelismSelector::VERBO:         LoopId: 6, TC: 10, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 20
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 6): 20
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 5
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 20}
+parallelismSelector::VERBO:          - EndCycles: for.body3 -> {1: 20}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 20}
+parallelismSelector::VERBO:        - Critical path: for.end, for.body3, for.body
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:5 V:15{1: 0}
+parallelismSelector::VERBO:       L:5 V:16{1: 0}
+parallelismSelector::VERBO:       L:5 V:17{1: 0}
+parallelismSelector::VERBO:       L:6 V:15{1: 0}
+parallelismSelector::VERBO:       L:6 V:16{1: 0}
+parallelismSelector::VERBO:       L:6 V:17{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:5{1: 20}
+parallelismSelector::VERBO:       L:6{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:50
+parallelismSelector::VERBO:       L:60
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T3_F213_R2_Loop" (FunctionId 214):
+parallelismSelector::VERBO:         LoopId: 5, TC: 10, IL: {1: 20}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 200
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 5): 200
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T3_F213_R2_Loop
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 201}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.end16 -> {1: 201}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 201}
+parallelismSelector::VERBO:        - Critical path: for.end, newFuncRoot, for.end16, for.body
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:5 V:15{1: 0}
+parallelismSelector::VERBO:       L:5 V:16{1: 0}
+parallelismSelector::VERBO:       L:5 V:17{1: 0}
+parallelismSelector::VERBO:       L:6 V:15{1: 0}
+parallelismSelector::VERBO:       L:6 V:16{1: 0}
+parallelismSelector::VERBO:       L:6 V:17{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:5{1: 20}
+parallelismSelector::VERBO:       L:6{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:50
+parallelismSelector::VERBO:       L:60
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "matrix_add" (FunctionId 213):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z10matrix_addPA10_iS0_S0_
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.end16_iso5 -> {1: 203}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 203}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 203}
+parallelismSelector::VERBO:        - Critical path: entry, for.end16_iso5, codeRepl
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:5 V:15{1: 0}
+parallelismSelector::VERBO:       L:5 V:16{1: 0}
+parallelismSelector::VERBO:       L:5 V:17{1: 0}
+parallelismSelector::VERBO:       L:6 V:15{1: 0}
+parallelismSelector::VERBO:       L:6 V:16{1: 0}
+parallelismSelector::VERBO:       L:6 V:17{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:5{1: 20}
+parallelismSelector::VERBO:       L:6{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:50
+parallelismSelector::VERBO:       L:60
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Filling in latencies and intervals per loop...
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 6, TC: 10, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 2
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 6, TC: 10, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 20
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 5, TC: 10, IL: {1: 20}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 20
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 5, TC: 10, IL: {1: 20}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 200
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z10matrix_addPA10_iS0_S0_ : 213
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(3 F=214) (18->15)(19->16)(20->17)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 18 is mapped to the object with value: 15
+                             Object with value: 19 is mapped to the object with value: 16
+                             Object with value: 20 is mapped to the object with value: 17
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T3_F213_R2_Loop : 214
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 5
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 6
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {6: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 136 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 52 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 6 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 156 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 20 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 156 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Initial constrained branch with estimates:
+                            FunctionPipelineTopLevel: No
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 15)
+                               +- Penalty on LoopId 5: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Penalty on LoopId 6: {1: lat/intv 0} (unroll: latency/interval)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 16)
+                               +- Penalty on LoopId 5: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Penalty on LoopId 6: {1: lat/intv 0} (unroll: latency/interval)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 17)
+                               +- Penalty on LoopId 5: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Penalty on LoopId 6: {1: lat/intv 0} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 5), min-max latency/interval: {unroll 1: lat/intv 200}
+                               +- Access to VariableId 15: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Access to VariableId 16: {1: lat/intv 0} (unroll: latency/interval)
+                               +- Access to VariableId 17: {1: lat/intv 0} (unroll: latency/interval)
+                               +- unroll with factors 1 (LoopId 6), min-max latency/interval: {unroll 1: lat/intv 20}
+                                  +- Access to VariableId 15: {1: lat/intv 0} (unroll: latency/interval)
+                                  +- Access to VariableId 16: {1: lat/intv 0} (unroll: latency/interval)
+                                  +- Access to VariableId 17: {1: lat/intv 0} (unroll: latency/interval)
+                            Id:  0 contains valid solution: maybe, min-max latency/interval: lat 203 intv 204, min-max area: LUTs: 156 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Initial FPGA area occupied (min): Area -- (LUTs: 156, FFs: 0, DSPs: 0, BRAMs: 0, URAMs: 0)
+parallelismSelector::VERBO: Initial FPGA area occupied (max): Area -- (LUTs: 156, FFs: 0, DSPs: 0, BRAMs: 0, URAMs: 0)
+parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
+                            Setting Space: FunctionPipelineTopLevel: No
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 15)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 16)
+                            Reshape {dim 0: cyclic 1, dim 1: cyclic 1} (VariableId 17)
+                            +- unroll with factors 1 (LoopId 5)
+                               +- unroll with factors 1 (LoopId 6)
+                            
+parallelismSelector::VERBO: Calculating latency for top level hw function: matrix_add
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(3 F=214) (18->15)(19->16)(20->17)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 18 is mapped to the object with value: 15
+                             Object with value: 19 is mapped to the object with value: 16
+                             Object with value: 20 is mapped to the object with value: 17
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body3" (LoopId 6):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 6
+parallelismSelector::VERBO:          - EndCycles: for.body3 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: for.body3
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:     Collect memory port metrics for LoopId: 6
+                                
+parallelismSelector::VERBO:     VarId: 18, number of direct accesses: 1, number of indirect accesses: 0, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 19, number of direct accesses: 1, number of indirect accesses: 0, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 20, number of direct accesses: 1, number of indirect accesses: 0, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:6 V:15{1: 0}
+parallelismSelector::VERBO:       L:6 V:16{1: 0}
+parallelismSelector::VERBO:       L:6 V:17{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:6{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:60
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 5):
+parallelismSelector::VERBO:         LoopId: 6, TC: 10, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 20
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 6): 20
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 5
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 20}
+parallelismSelector::VERBO:          - EndCycles: for.body3 -> {1: 20}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 20}
+parallelismSelector::VERBO:        - Critical path: for.end, for.body3, for.body
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:     Collect memory port metrics for LoopId: 5
+                                
+parallelismSelector::VERBO:     VarId: 18, number of direct accesses: 0, number of indirect accesses: 1, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 19, number of direct accesses: 0, number of indirect accesses: 1, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 20, number of direct accesses: 0, number of indirect accesses: 1, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:5 V:15{1: 0}
+parallelismSelector::VERBO:       L:5 V:16{1: 0}
+parallelismSelector::VERBO:       L:5 V:17{1: 0}
+parallelismSelector::VERBO:       L:6 V:15{1: 0}
+parallelismSelector::VERBO:       L:6 V:16{1: 0}
+parallelismSelector::VERBO:       L:6 V:17{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:5{1: 20}
+parallelismSelector::VERBO:       L:6{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:50
+parallelismSelector::VERBO:       L:60
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T3_F213_R2_Loop" (FunctionId 214):
+parallelismSelector::VERBO:         LoopId: 5, TC: 10, IL: {1: 20}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 200
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 5): 200
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T3_F213_R2_Loop
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 201}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.end16 -> {1: 201}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 201}
+parallelismSelector::VERBO:        - Critical path: for.end, newFuncRoot, for.end16, for.body
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:5 V:15{1: 0}
+parallelismSelector::VERBO:       L:5 V:16{1: 0}
+parallelismSelector::VERBO:       L:5 V:17{1: 0}
+parallelismSelector::VERBO:       L:6 V:15{1: 0}
+parallelismSelector::VERBO:       L:6 V:16{1: 0}
+parallelismSelector::VERBO:       L:6 V:17{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:5{1: 20}
+parallelismSelector::VERBO:       L:6{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:50
+parallelismSelector::VERBO:       L:60
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "matrix_add" (FunctionId 213):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z10matrix_addPA10_iS0_S0_
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.end16_iso5 -> {1: 203}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 203}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 203}
+parallelismSelector::VERBO:        - Critical path: entry, for.end16_iso5, codeRepl
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:5 V:15{1: 0}
+parallelismSelector::VERBO:       L:5 V:16{1: 0}
+parallelismSelector::VERBO:       L:5 V:17{1: 0}
+parallelismSelector::VERBO:       L:6 V:15{1: 0}
+parallelismSelector::VERBO:       L:6 V:16{1: 0}
+parallelismSelector::VERBO:       L:6 V:17{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:5{1: 20}
+parallelismSelector::VERBO:       L:6{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:50
+parallelismSelector::VERBO:       L:60
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Filling in latencies and intervals per loop...
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 6, TC: 10, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 2
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 6, TC: 10, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 20
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 5, TC: 10, IL: {1: 20}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 20
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 5, TC: 10, IL: {1: 20}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 200
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z10matrix_addPA10_iS0_S0_ : 213
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(3 F=214) (18->15)(19->16)(20->17)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 18 is mapped to the object with value: 15
+                             Object with value: 19 is mapped to the object with value: 16
+                             Object with value: 20 is mapped to the object with value: 17
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T3_F213_R2_Loop : 214
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 5
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 6
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {6: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 136 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 52 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 6 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 156 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 20 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 156 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Estimated metrics for the application:
+parallelismSelector::VERBO: Loop with Id 5:
+parallelismSelector::VERBO:     Variable with Id 18 (A):
+parallelismSelector::VERBO:         II mem: None
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 19 (B):
+parallelismSelector::VERBO:         II mem: None
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 20 (C):
+parallelismSelector::VERBO:         II mem: None
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 10 - 10
+parallelismSelector::VERBO:     II: 20 - 20
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 6:
+parallelismSelector::VERBO:     Variable with Id 18 (A):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 19 (B):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 20 (C):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 10 - 10
+parallelismSelector::VERBO:     II: 2 - 2
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Function with Id 213:
+parallelismSelector::VERBO:     Interval: 204 - 204
+                                Latency: 203 - 203
+parallelismSelector::VERBO: Function with Id 214:
+parallelismSelector::VERBO:     Interval: 202 - 202
+                                Latency: 201 - 201

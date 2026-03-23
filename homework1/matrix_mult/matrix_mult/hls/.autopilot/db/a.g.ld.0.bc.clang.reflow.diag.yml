@@ -1,0 +1,36 @@
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_6_2
+  - String:          '> at '
+  - LoopLoc:         '../matrix_mult.cpp:6:25'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../matrix_mult.cpp, Line: 8, Column: 29 }
+Function:        _Z11matrix_multPA10_iS0_S0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_8_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../matrix_mult.cpp, Line: 4, Column: 0 }
+Function:        _Z11matrix_multPA10_iS0_S0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_8_3
+  - String:          ''' ('
+  - LoopLoc:         '../matrix_mult.cpp:8:29'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_mult
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...

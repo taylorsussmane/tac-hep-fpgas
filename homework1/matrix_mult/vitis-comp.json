@@ -1,0 +1,11 @@
+{
+  "name": "matrix_mult",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matrix_mult_config.cfg"
+    ],
+    "work_dir": "matrix_mult"
+  }
+}
