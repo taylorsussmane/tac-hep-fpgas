@@ -1,0 +1,3 @@
+relativeroot=/scratch/tsussman/bubble_sort_component
+original_argv=--mode hls --csim --config /scratch/tsussman/bubble_sort_component/bubble_sort_hls_config.cfg --work_dir bubbleSort 
+

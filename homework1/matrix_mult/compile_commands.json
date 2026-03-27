@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "/scratch/tsussman/matrix_mult",
+    "arguments": [
+      "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/scratch/tsussman/matrix_mult.cpp"
+    ],
+    "file": "/scratch/tsussman/matrix_mult.cpp"
+  },
+  {
+    "directory": "/scratch/tsussman/matrix_mult",
+    "arguments": [
+      "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include",
+      "",
+      "-c",
+      "/scratch/tsussman/matrix_mult_tb.cpp"
+    ],
+    "file": "/scratch/tsussman/matrix_mult_tb.cpp"
+  }
+]

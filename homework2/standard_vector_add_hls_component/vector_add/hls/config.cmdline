@@ -1,0 +1,3 @@
+relativeroot=/scratch/tsussman/standard_vector_add_hls_component
+original_argv=-c --mode hls --config /scratch/tsussman/standard_vector_add_hls_component/standard_vector_add_hls_config.cfg --work_dir vector_add 
+

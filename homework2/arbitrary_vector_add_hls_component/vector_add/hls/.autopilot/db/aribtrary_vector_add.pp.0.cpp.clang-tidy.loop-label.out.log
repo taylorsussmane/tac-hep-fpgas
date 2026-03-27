@@ -1,0 +1,30 @@
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:29714:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:29714:7: note: FIX-IT applied suggested code changes
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:30688:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:30688:5: note: FIX-IT applied suggested code changes
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:30702:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:30702:5: note: FIX-IT applied suggested code changes
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:30716:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:30716:5: note: FIX-IT applied suggested code changes
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:32333:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:32333:7: note: FIX-IT applied suggested code changes
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:34118:2: warning: Added loop label VITIS_LOOP_10_1:   [xilinx-label-all-loops]
+ for (int i = 0; i<100; i++){
+ ^~~
+ VITIS_LOOP_10_1: 
+/scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp:34118:2: note: FIX-IT applied suggested code changes

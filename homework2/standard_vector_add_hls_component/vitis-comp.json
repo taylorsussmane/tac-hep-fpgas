@@ -1,0 +1,11 @@
+{
+  "name": "standard_vector_add_hls_component",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "standard_vector_add_hls_config.cfg"
+    ],
+    "work_dir": "vector_add"
+  }
+}

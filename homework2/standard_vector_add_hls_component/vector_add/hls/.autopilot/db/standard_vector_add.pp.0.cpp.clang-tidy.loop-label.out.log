@@ -1,0 +1,5 @@
+/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls/.autopilot/db/standard_vector_add.pp.0.cpp:28556:5: warning: Added loop label VITIS_LOOP_6_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 100; i++) {
+    ^~~
+    VITIS_LOOP_6_1: 
+/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls/.autopilot/db/standard_vector_add.pp.0.cpp:28556:5: note: FIX-IT applied suggested code changes

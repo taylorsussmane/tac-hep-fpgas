@@ -1,0 +1,15 @@
+/scratch/tsussman/matrix_mult/matrix_mult/hls/.autopilot/db/matrix_mult.pp.0.cpp:28555:5: warning: Added loop label VITIS_LOOP_5_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 10; i++){
+    ^~~
+    VITIS_LOOP_5_1: 
+/scratch/tsussman/matrix_mult/matrix_mult/hls/.autopilot/db/matrix_mult.pp.0.cpp:28555:5: note: FIX-IT applied suggested code changes
+/scratch/tsussman/matrix_mult/matrix_mult/hls/.autopilot/db/matrix_mult.pp.0.cpp:28556:9: warning: Added loop label VITIS_LOOP_6_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 10; j++){
+        ^~~
+        VITIS_LOOP_6_2: 
+/scratch/tsussman/matrix_mult/matrix_mult/hls/.autopilot/db/matrix_mult.pp.0.cpp:28556:9: note: FIX-IT applied suggested code changes
+/scratch/tsussman/matrix_mult/matrix_mult/hls/.autopilot/db/matrix_mult.pp.0.cpp:28558:13: warning: Added loop label VITIS_LOOP_8_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < 10; k++){
+            ^~~
+            VITIS_LOOP_8_3: 
+/scratch/tsussman/matrix_mult/matrix_mult/hls/.autopilot/db/matrix_mult.pp.0.cpp:28558:13: note: FIX-IT applied suggested code changes

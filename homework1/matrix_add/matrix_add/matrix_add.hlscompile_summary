@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/scratch/tsussman/matrix_add/matrix_add/matrix_add.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Mar 17 11:02:21 2026",
+ "timestampMillis": "1773763341640",
+ "buildStep": {
+  "cmdId": "3a324b79-4dcb-4053-9700-b1c0dc1dd82f",
+  "name": "v++",
+  "logFile": "/scratch/tsussman/matrix_add/matrix_add/logs/matrix_add.steps.log",
+  "commandLine": "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /scratch/tsussman/matrix_add/matrix_add_config.cfg --work_dir matrix_add ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/scratch/tsussman/matrix_add/matrix_add_config.cfg",
+   "--work_dir",
+   "matrix_add"
+  ],
+  "iniFiles": [
+   {
+    "path": "/scratch/tsussman/matrix_add/matrix_add_config.cfg",
+    "content": "part=xcvu9p-flga2104-2-i\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=matrix_add\nsyn.file=/scratch/tsussman/matrix_add.cpp\ntb.file=/scratch/tsussman/matrix_add_tb.cpp\ncsim.code_analyzer=1"
+   }
+  ],
+  "cwd": "/scratch/tsussman/matrix_add"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Mar 17 11:02:21 2026",
+ "timestampMillis": "1773763341640",
+ "status": {
+  "cmdId": "3a324b79-4dcb-4053-9700-b1c0dc1dd82f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Mar 17 11:02:32 2026",
+ "timestampMillis": "1773763352138",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_add",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/scratch/tsussman/matrix_add.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Mar 17 11:02:32 2026",
+ "timestampMillis": "1773763352139",
+ "buildStep": {
+  "cmdId": "8d48ee6f-c982-43c1-95c0-3eea41d178e1",
+  "name": "csynth_design",
+  "logFile": "/scratch/tsussman/matrix_add/matrix_add/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/scratch/tsussman/matrix_add"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Mar 17 11:02:32 2026",
+ "timestampMillis": "1773763352140",
+ "status": {
+  "cmdId": "8d48ee6f-c982-43c1-95c0-3eea41d178e1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 17 11:02:32 2026",
+ "timestampMillis": "1773763352140",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add/matrix_add/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 17 11:02:32 2026",
+ "timestampMillis": "1773763352140",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add/matrix_add/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 17 11:02:32 2026",
+ "timestampMillis": "1773763352141",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add/matrix_add/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 17 11:03:19 2026",
+ "timestampMillis": "1773763399981",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add/matrix_add/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 17 11:03:19 2026",
+ "timestampMillis": "1773763399982",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add/matrix_add/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 17 11:03:19 2026",
+ "timestampMillis": "1773763399982",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add/matrix_add/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Mar 17 11:03:19 2026",
+ "timestampMillis": "1773763399983",
+ "status": {
+  "cmdId": "8d48ee6f-c982-43c1-95c0-3eea41d178e1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Mar 17 11:03:20 2026",
+ "timestampMillis": "1773763400183",
+ "status": {
+  "cmdId": "3a324b79-4dcb-4053-9700-b1c0dc1dd82f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 17 11:03:20 2026",
+ "timestampMillis": "1773763400583",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add/matrix_add/reports/v++_compile_matrix_add_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Mar 17 11:03:20 2026",
+ "timestampMillis": "1773763400584",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add/matrix_add/reports/.db/v++_compile_matrix_add_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

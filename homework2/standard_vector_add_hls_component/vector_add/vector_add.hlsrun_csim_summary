@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/vector_add.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Mar 27 13:11:25 2026",
+ "timestampMillis": "1774635085596",
+ "buildStep": {
+  "cmdId": "3e8eb6e4-2fdd-473d-add9-d3a8fa08f4d2",
+  "name": "vitis-run",
+  "logFile": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/logs/vector_add.steps.log",
+  "commandLine": "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /scratch/tsussman/standard_vector_add_hls_component/standard_vector_add_hls_config.cfg --work_dir vector_add ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/scratch/tsussman/standard_vector_add_hls_component/standard_vector_add_hls_config.cfg",
+   "--work_dir",
+   "vector_add"
+  ],
+  "iniFiles": [],
+  "cwd": "/scratch/tsussman/standard_vector_add_hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 13:11:25 2026",
+ "timestampMillis": "1774635085596",
+ "status": {
+  "cmdId": "3e8eb6e4-2fdd-473d-add9-d3a8fa08f4d2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Mar 27 13:11:36 2026",
+ "timestampMillis": "1774635096175",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vector_add",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/scratch/tsussman/homework2/standard_vector_add.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Mar 27 13:11:36 2026",
+ "timestampMillis": "1774635096176",
+ "buildStep": {
+  "cmdId": "b12327ff-2ab4-40b9-b0c4-6f0cebcf12f6",
+  "name": "csim_design",
+  "logFile": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/scratch/tsussman/standard_vector_add_hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 13:11:36 2026",
+ "timestampMillis": "1774635096177",
+ "status": {
+  "cmdId": "b12327ff-2ab4-40b9-b0c4-6f0cebcf12f6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 13:11:38 2026",
+ "timestampMillis": "1774635098551",
+ "status": {
+  "cmdId": "b12327ff-2ab4-40b9-b0c4-6f0cebcf12f6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 13:11:38 2026",
+ "timestampMillis": "1774635098737",
+ "status": {
+  "cmdId": "3e8eb6e4-2fdd-473d-add9-d3a8fa08f4d2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:11:38 2026",
+ "timestampMillis": "1774635098738",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:11:38 2026",
+ "timestampMillis": "1774635098738",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

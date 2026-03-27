@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "/scratch/tsussman/matrix_add/matrix_add/hls/csim/code_analyzer/app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Mar 16 15:20:56 2026",
+ "timestampMillis": "1773692456341",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 16 15:20:56 2026",
+ "timestampMillis": "1773692456342",
+ "buildStep": {
+  "cmdId": "a383f69e-2175-11f1-a0ba-002590e2f65e",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 16 15:20:56 2026",
+ "timestampMillis": "1773692456343",
+ "status": {
+  "cmdId": "a383f69e-2175-11f1-a0ba-002590e2f65e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 16 15:21:33 2026",
+ "timestampMillis": "1773692493328",
+ "status": {
+  "cmdId": "a383f69e-2175-11f1-a0ba-002590e2f65e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 16 15:21:33 2026",
+ "timestampMillis": "1773692493330",
+ "report": {
+  "path": "/scratch/tsussman/matrix_add",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "a383f69e-2175-11f1-a0ba-002590e2f65e"
+ }
+}
+</ENTRY>

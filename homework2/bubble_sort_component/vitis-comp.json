@@ -1,0 +1,11 @@
+{
+  "name": "bubble_sort_component",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "bubble_sort_hls_config.cfg"
+    ],
+    "work_dir": "bubbleSort"
+  }
+}

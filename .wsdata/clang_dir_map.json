@@ -1,0 +1,15 @@
+{
+  "workspaceRoot": "/scratch/tsussman",
+  "mapping": {
+    "homework2/lec6ex1.cpp": "lec6ex1",
+    "matrix_add_tb.cpp": "matrix_add",
+    "homework2/bubble_sort.cpp": "bubble_sort_component",
+    "homework2/aribtrary_vector_add.cpp": "arbitrary_vector_add_hls_component",
+    "matrix_mult_tb.cpp": "matrix_mult",
+    "homework2/aribtrary_vector_add_tb.cpp": "arbitrary_vector_add_hls_component",
+    "homework2/standard_vector_add.cpp": "standard_vector_add_hls_component",
+    "homework2/standard_vector_add_tb.cpp": "standard_vector_add_hls_component",
+    "matrix_mult.cpp": "matrix_mult",
+    "matrix_add.cpp": "matrix_add"
+  }
+}

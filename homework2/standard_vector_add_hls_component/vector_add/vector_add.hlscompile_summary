@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/vector_add.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Mar 27 13:11:46 2026",
+ "timestampMillis": "1774635106768",
+ "buildStep": {
+  "cmdId": "7db4afa1-6530-44e9-8036-4affe3eaa5b4",
+  "name": "v++",
+  "logFile": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/logs/vector_add.steps.log",
+  "commandLine": "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /scratch/tsussman/standard_vector_add_hls_component/standard_vector_add_hls_config.cfg --work_dir vector_add ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/scratch/tsussman/standard_vector_add_hls_component/standard_vector_add_hls_config.cfg",
+   "--work_dir",
+   "vector_add"
+  ],
+  "iniFiles": [
+   {
+    "path": "/scratch/tsussman/standard_vector_add_hls_component/standard_vector_add_hls_config.cfg",
+    "content": "part=xcvu13p-fsga2577-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=vector_add\nsyn.file=/scratch/tsussman/homework2/standard_vector_add.cpp\ntb.file=/scratch/tsussman/homework2/standard_vector_add_tb.cpp\nclock=25ns"
+   }
+  ],
+  "cwd": "/scratch/tsussman/standard_vector_add_hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 13:11:46 2026",
+ "timestampMillis": "1774635106768",
+ "status": {
+  "cmdId": "7db4afa1-6530-44e9-8036-4affe3eaa5b4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Mar 27 13:11:57 2026",
+ "timestampMillis": "1774635117047",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vector_add",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/scratch/tsussman/homework2/standard_vector_add.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Mar 27 13:11:57 2026",
+ "timestampMillis": "1774635117049",
+ "buildStep": {
+  "cmdId": "6d9ab31f-d644-434e-9c5b-ec1caa6658b8",
+  "name": "csynth_design",
+  "logFile": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/scratch/tsussman/standard_vector_add_hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 13:11:57 2026",
+ "timestampMillis": "1774635117049",
+ "status": {
+  "cmdId": "6d9ab31f-d644-434e-9c5b-ec1caa6658b8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:11:57 2026",
+ "timestampMillis": "1774635117050",
+ "report": {
+  "path": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:11:57 2026",
+ "timestampMillis": "1774635117050",
+ "report": {
+  "path": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:11:57 2026",
+ "timestampMillis": "1774635117050",
+ "report": {
+  "path": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:12:11 2026",
+ "timestampMillis": "1774635131553",
+ "report": {
+  "path": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:12:11 2026",
+ "timestampMillis": "1774635131554",
+ "report": {
+  "path": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:12:11 2026",
+ "timestampMillis": "1774635131554",
+ "report": {
+  "path": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 13:12:11 2026",
+ "timestampMillis": "1774635131555",
+ "status": {
+  "cmdId": "6d9ab31f-d644-434e-9c5b-ec1caa6658b8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 13:12:11 2026",
+ "timestampMillis": "1774635131761",
+ "status": {
+  "cmdId": "7db4afa1-6530-44e9-8036-4affe3eaa5b4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:12:11 2026",
+ "timestampMillis": "1774635131903",
+ "report": {
+  "path": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/reports/v++_compile_vector_add_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 13:12:11 2026",
+ "timestampMillis": "1774635131904",
+ "report": {
+  "path": "/scratch/tsussman/standard_vector_add_hls_component/vector_add/reports/.db/v++_compile_vector_add_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

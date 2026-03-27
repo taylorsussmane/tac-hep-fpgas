@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "/scratch/tsussman/matrix_mult/matrix_mult/matrix_mult.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 16 16:00:42 2026",
+ "timestampMillis": "1773694842978",
+ "buildStep": {
+  "cmdId": "b9bfc97c-a820-4015-892e-d1eab0dd7871",
+  "name": "vitis-run",
+  "logFile": "/scratch/tsussman/matrix_mult/matrix_mult/logs/matrix_mult.steps.log",
+  "commandLine": "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /scratch/tsussman/matrix_mult/matrix_mult_config.cfg --work_dir matrix_mult ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/scratch/tsussman/matrix_mult/matrix_mult_config.cfg",
+   "--work_dir",
+   "matrix_mult"
+  ],
+  "iniFiles": [],
+  "cwd": "/scratch/tsussman/matrix_mult"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 16 16:00:42 2026",
+ "timestampMillis": "1773694842978",
+ "status": {
+  "cmdId": "b9bfc97c-a820-4015-892e-d1eab0dd7871",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Mar 16 16:00:53 2026",
+ "timestampMillis": "1773694853393",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrix_mult",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/scratch/tsussman/matrix_mult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 16 16:00:53 2026",
+ "timestampMillis": "1773694853395",
+ "buildStep": {
+  "cmdId": "c95f286d-76cd-4ce8-abfa-323cddf75274",
+  "name": "csim_design",
+  "logFile": "/scratch/tsussman/matrix_mult/matrix_mult/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/scratch/tsussman/matrix_mult"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 16 16:00:53 2026",
+ "timestampMillis": "1773694853395",
+ "status": {
+  "cmdId": "c95f286d-76cd-4ce8-abfa-323cddf75274",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 16 16:00:55 2026",
+ "timestampMillis": "1773694855804",
+ "status": {
+  "cmdId": "c95f286d-76cd-4ce8-abfa-323cddf75274",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 16 16:00:55 2026",
+ "timestampMillis": "1773694855976",
+ "status": {
+  "cmdId": "b9bfc97c-a820-4015-892e-d1eab0dd7871",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 16 16:00:55 2026",
+ "timestampMillis": "1773694855977",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 16 16:00:55 2026",
+ "timestampMillis": "1773694855977",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

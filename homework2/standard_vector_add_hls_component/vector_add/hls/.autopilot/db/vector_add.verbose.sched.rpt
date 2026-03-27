@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vitis HLS Report for 'vector_add'
+================================================================
+* Date:           Fri Mar 27 13:12:10 2026
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        vector_add
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-fsga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  25.00 ns|  2.080 ns|     6.75 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                   |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                     |
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |      102|      102|  2.550 us|  2.550 us|  100|  100|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_6_1  |      100|      100|         2|          1|          1|   100|       yes|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.47>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i1 = alloca i32 1"   --->   Operation 5 'alloca' 'i1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [../homework2/standard_vector_add.cpp:4]   --->   Operation 6 'spectopmodule' 'spectopmodule_ln4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %a"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %b, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %b"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %c, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %c"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.38ns)   --->   "%store_ln0 = store i7 0, i7 %i1"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln6 = br void %for.inc.split" [../homework2/standard_vector_add.cpp:6]   --->   Operation 14 'br' 'br_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%i1_load = load i7 %i1" [../homework2/standard_vector_add.cpp:6]   --->   Operation 15 'load' 'i1_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln6 = zext i7 %i1_load" [../homework2/standard_vector_add.cpp:6]   --->   Operation 16 'zext' 'zext_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i32 %a, i64 0, i64 %zext_ln6" [../homework2/standard_vector_add.cpp:7]   --->   Operation 17 'getelementptr' 'a_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [2/2] (0.60ns)   --->   "%a_load = load i7 %a_addr" [../homework2/standard_vector_add.cpp:7]   --->   Operation 18 'load' 'a_load' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%b_addr = getelementptr i32 %b, i64 0, i64 %zext_ln6" [../homework2/standard_vector_add.cpp:7]   --->   Operation 19 'getelementptr' 'b_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (0.60ns)   --->   "%b_load = load i7 %b_addr" [../homework2/standard_vector_add.cpp:7]   --->   Operation 20 'load' 'b_load' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_1 : Operation 21 [1/1] (0.70ns)   --->   "%i = add i7 %i1_load, i7 1" [../homework2/standard_vector_add.cpp:6]   --->   Operation 21 'add' 'i' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.70ns)   --->   "%icmp_ln6 = icmp_eq  i7 %i1_load, i7 99" [../homework2/standard_vector_add.cpp:6]   --->   Operation 22 'icmp' 'icmp_ln6' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.38ns)   --->   "%store_ln6 = store i7 %i, i7 %i1" [../homework2/standard_vector_add.cpp:6]   --->   Operation 23 'store' 'store_ln6' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln6 = br i1 %icmp_ln6, void %for.inc.split, void %for.end" [../homework2/standard_vector_add.cpp:6]   --->   Operation 24 'br' 'br_ln6' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 2.08>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specpipeline_ln6 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [../homework2/standard_vector_add.cpp:6]   --->   Operation 25 'specpipeline' 'specpipeline_ln6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%speclooptripcount_ln6 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 100, i64 100, i64 100" [../homework2/standard_vector_add.cpp:6]   --->   Operation 26 'speclooptripcount' 'speclooptripcount_ln6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specloopname_ln6 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [../homework2/standard_vector_add.cpp:6]   --->   Operation 27 'specloopname' 'specloopname_ln6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/2] (0.60ns)   --->   "%a_load = load i7 %a_addr" [../homework2/standard_vector_add.cpp:7]   --->   Operation 28 'load' 'a_load' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_2 : Operation 29 [1/2] (0.60ns)   --->   "%b_load = load i7 %b_addr" [../homework2/standard_vector_add.cpp:7]   --->   Operation 29 'load' 'b_load' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_2 : Operation 30 [1/1] (0.88ns)   --->   "%add_ln7 = add i32 %b_load, i32 %a_load" [../homework2/standard_vector_add.cpp:7]   --->   Operation 30 'add' 'add_ln7' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i32 %c, i64 0, i64 %zext_ln6" [../homework2/standard_vector_add.cpp:7]   --->   Operation 31 'getelementptr' 'c_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.60ns)   --->   "%store_ln7 = store i32 %add_ln7, i7 %c_addr" [../homework2/standard_vector_add.cpp:7]   --->   Operation 32 'store' 'store_ln7' <Predicate = true> <Delay = 0.60> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.60> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 100> <RAM>
+ST_2 : Operation 33 [1/1] (0.38ns)   --->   "%ret_ln9 = ret" [../homework2/standard_vector_add.cpp:9]   --->   Operation 33 'ret' 'ret_ln9' <Predicate = (icmp_ln6)> <Delay = 0.38>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 25.000ns, clock uncertainty: 6.750ns.
+
+ <State 1>: 1.480ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'i1' [12]  (0.387 ns)
+	'load' operation 7 bit ('i1_load', ../homework2/standard_vector_add.cpp:6) on local variable 'i1' [15]  (0.000 ns)
+	'add' operation 7 bit ('i', ../homework2/standard_vector_add.cpp:6) [27]  (0.706 ns)
+	'store' operation 0 bit ('store_ln6', ../homework2/standard_vector_add.cpp:6) of variable 'i', ../homework2/standard_vector_add.cpp:6 on local variable 'i1' [29]  (0.387 ns)
+
+ <State 2>: 2.080ns
+The critical path consists of the following:
+	'load' operation 32 bit ('a_load', ../homework2/standard_vector_add.cpp:7) on array 'a' [21]  (0.600 ns)
+	'add' operation 32 bit ('add_ln7', ../homework2/standard_vector_add.cpp:7) [24]  (0.880 ns)
+	'store' operation 0 bit ('store_ln7', ../homework2/standard_vector_add.cpp:7) of variable 'add_ln7', ../homework2/standard_vector_add.cpp:7 on array 'c' [26]  (0.600 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
