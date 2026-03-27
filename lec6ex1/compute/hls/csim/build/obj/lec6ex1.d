@@ -1,0 +1,20 @@
+obj/lec6ex1.o: ../../../../../homework2/lec6ex1.cpp \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/ap_int.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_common.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_decl.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_private.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/hls_half.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_fpo.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/hls_fpo.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/floating_point_v7_1_bitacc_cmodel.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/gmp.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/mpfr.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/hls_half_x_utils.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_int_base.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_int_ref.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_int_special.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/ap_fixed.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_base.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_ref.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/etc/ap_fixed_special.h \
+  /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/include/hls_vector.h

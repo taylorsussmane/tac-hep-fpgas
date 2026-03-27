@@ -1,0 +1,111 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /scratch/tsussman/lec6ex1/compute/compute.hlsrun_csim_summary, at Tue Mar 17 13:40:19 2026
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir /scratch/tsussman/lec6ex1/compute -config /scratch/tsussman/lec6ex1/lec6ex1_config.cfg -cmdlineconfig /scratch/tsussman/lec6ex1/compute/hls/config.cmdline
+INFO: [HLS 200-10] For user 'tsussman' on host 'login04.hep.wisc.edu' (Linux_x86_64 version 6.1.166-1.el9.elrepo.x86_64) on Tue Mar 17 13:40:27 CDT 2026
+INFO: [HLS 200-10] On os "AlmaLinux release 9.7 (Moss Jungle Cat)"
+INFO: [HLS 200-10] In directory '/scratch/tsussman/lec6ex1'
+INFO: [HLS 200-2005] Using work_dir /scratch/tsussman/lec6ex1/compute 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=/scratch/tsussman/homework2/lec6ex1.cpp' from /scratch/tsussman/lec6ex1/lec6ex1_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/scratch/tsussman/homework2/lec6ex1.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/scratch/tsussman/homework2/lec6ex1.cpp' from /scratch/tsussman/lec6ex1/lec6ex1_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/scratch/tsussman/homework2/lec6ex1.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=compute' from /scratch/tsussman/lec6ex1/lec6ex1_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /scratch/tsussman/lec6ex1/lec6ex1_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcvu9p-flga2104-2-i' from /scratch/tsussman/lec6ex1/lec6ex1_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flga2104-2-i'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from /scratch/tsussman/lec6ex1/lec6ex1_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../homework2/lec6ex1.cpp in debug mode
+../../../../../homework2/lec6ex1.cpp:12:7: error: use of undeclared identifier 'in'
+      in[i] = i;
+      ^
+../../../../../homework2/lec6ex1.cpp:14:20: error: expected ')'
+    compute(data_t in[totalNumWords], data_t Out[totalNumWords]);
+                   ^
+../../../../../homework2/lec6ex1.cpp:14:12: note: to match this '('
+    compute(data_t in[totalNumWords], data_t Out[totalNumWords]);
+           ^
+../../../../../homework2/lec6ex1.cpp:15:5: error: use of undeclared identifier 'check_results'
+    check_results();
+    ^
+../../../../../homework2/lec6ex1.cpp:18:15: error: unknown type name 'data_t'
+void compute (data_t in[totalNumWords ], data_t Out[totalNumWords ]) {
+              ^
+../../../../../homework2/lec6ex1.cpp:18:42: error: unknown type name 'data_t'
+void compute (data_t in[totalNumWords ], data_t Out[totalNumWords ]) {
+                                         ^
+../../../../../homework2/lec6ex1.cpp:19:9: error: expected ';' after expression
+  data_t tmp1[totalNumWords], tmp2[totalNumWords];
+        ^
+        ;
+../../../../../homework2/lec6ex1.cpp:19:10: error: use of undeclared identifier 'tmp1'
+  data_t tmp1[totalNumWords], tmp2[totalNumWords];
+         ^
+../../../../../homework2/lec6ex1.cpp:19:31: error: use of undeclared identifier 'tmp2'
+  data_t tmp1[totalNumWords], tmp2[totalNumWords];
+                              ^
+../../../../../homework2/lec6ex1.cpp:21:5: error: use of undeclared identifier 'tmp1'
+    tmp1[i] = in[i] * 3;
+    ^
+../../../../../homework2/lec6ex1.cpp:22:5: error: use of undeclared identifier 'tmp2'
+    tmp2[i] = in[i] * 3;
+    ^
+../../../../../homework2/lec6ex1.cpp:25:5: error: use of undeclared identifier 'tmp1'
+    tmp1[i] = tmp1[i] + 25;
+    ^
+../../../../../homework2/lec6ex1.cpp:25:15: error: use of undeclared identifier 'tmp1'
+    tmp1[i] = tmp1[i] + 25;
+              ^
+../../../../../homework2/lec6ex1.cpp:28:5: error: use of undeclared identifier 'tmp2'
+    tmp2[i] = tmp2[i] * 2;
+    ^
+../../../../../homework2/lec6ex1.cpp:28:15: error: use of undeclared identifier 'tmp2'; did you mean 'exp2'?
+    tmp2[i] = tmp2[i] * 2;
+              ^~~~
+              exp2
+/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/math.h:85:12: note: 'exp2' declared here
+using std::exp2;
+           ^
+../../../../../homework2/lec6ex1.cpp:28:15: error: reference to overloaded function could not be resolved; did you mean to call it?
+    tmp2[i] = tmp2[i] * 2;
+              ^~~~
+/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:1354:5: note: possible target for call
+    exp2(_Tp __x)
+    ^
+../../../../../homework2/lec6ex1.cpp:31:6: error: use of undeclared identifier 'out'; did you mean 'Out'?
+     out[i] = tmp1[i] + tmp2[i] * 2;
+     ^~~
+     Out
+../../../../../homework2/lec6ex1.cpp:18:49: note: 'Out' declared here
+void compute (data_t in[totalNumWords ], data_t Out[totalNumWords ]) {
+                                                ^
+../../../../../homework2/lec6ex1.cpp:31:15: error: use of undeclared identifier 'tmp1'
+     out[i] = tmp1[i] + tmp2[i] * 2;
+              ^
+../../../../../homework2/lec6ex1.cpp:31:25: error: use of undeclared identifier 'tmp2'; did you mean 'exp2'?
+     out[i] = tmp1[i] + tmp2[i] * 2;
+                        ^~~~
+                        exp2
+/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/math.h:85:12: note: 'exp2' declared here
+using std::exp2;
+           ^
+../../../../../homework2/lec6ex1.cpp:31:25: error: reference to overloaded function could not be resolved; did you mean to call it?
+     out[i] = tmp1[i] + tmp2[i] * 2;
+                        ^~~~
+/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath:1354:5: note: possible target for call
+    exp2(_Tp __x)
+    ^
+../../../../../homework2/lec6ex1.cpp:19:3: warning: expression result unused [-Wunused-value]
+  data_t tmp1[totalNumWords], tmp2[totalNumWords];
+  ^~~~~~
+1 warning and 19 errors generated.
+make: *** [csim.mk:87: obj/lec6ex1.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 11.04 seconds. Total CPU system time: 2.42 seconds. Total elapsed time: 14.39 seconds; peak allocated memory: 287.312 MB.
