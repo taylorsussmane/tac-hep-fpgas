@@ -1,0 +1,18 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="bubbleSort" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=bubbleSort" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../homework2/bubble_sort.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="bubbleSort" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../homework2/bubble_sort.cpp:12:0" msg_body="Inlining function 'swap(int*, int, int)' into 'bubbleSort(int*)'">
+        <args Callee="swap(int*, int, int)" Callee-DebugLoc="File ../homework2/bubble_sort.cpp Line 5 Column 0" Caller="bubbleSort(int*)" Caller-DebugLoc="File ../homework2/bubble_sort.cpp Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="../homework2/bubble_sort.cpp:13:22" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_13_1'.">
+        <args LoopName="VITIS_LOOP_13_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../homework2/bubble_sort.cpp:13:22" msg_body="loop_flatten 0 1 bubbleSort ../homework2/bubble_sort.cpp:13:22VITIS_LOOP_13_1 ../homework2/bubble_sort.cpp:13:22">
+        <args LoopLoc="../homework2/bubble_sort.cpp:13:22" LoopLoc-DebugLoc="File ../homework2/bubble_sort.cpp Line 13 Column 22" LoopName="VITIS_LOOP_13_1" PragmaFunction="bubbleSort" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="../homework2/bubble_sort.cpp:13:22" PragmaSrcLoc-DebugLoc="File ../homework2/bubble_sort.cpp Line 13 Column 22" PragmaType="loop_flatten"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

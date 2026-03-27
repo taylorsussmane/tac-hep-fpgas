@@ -1,0 +1,15 @@
+/scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp:28563:5: warning: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 16 - 1; i++)
+    ^~~
+    VITIS_LOOP_13_1: 
+/scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp:28563:5: note: FIX-IT applied suggested code changes
+/scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp:28566:9: warning: Added loop label VITIS_LOOP_16_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 16 - i - 1; j++)
+        ^~~
+        VITIS_LOOP_16_2: 
+/scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp:28566:9: note: FIX-IT applied suggested code changes
+/scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp:28582:2: warning: Added loop label VITIS_LOOP_32_1:   [xilinx-label-all-loops]
+ for (int i = 0; i<16; i++){
+ ^~~
+ VITIS_LOOP_32_1: 
+/scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp:28582:2: note: FIX-IT applied suggested code changes

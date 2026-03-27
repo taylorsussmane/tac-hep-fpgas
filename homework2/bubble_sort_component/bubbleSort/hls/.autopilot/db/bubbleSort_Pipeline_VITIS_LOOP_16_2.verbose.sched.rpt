@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vitis HLS Report for 'bubbleSort_Pipeline_VITIS_LOOP_16_2'
+================================================================
+* Date:           Fri Mar 27 13:37:43 2026
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        bubbleSort
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-fsga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  25.00 ns|  2.278 ns|     6.75 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                   |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                     |
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+    |        4|       32|  0.100 us|  0.800 us|    3|   31|  loop auto-rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+-----------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip  |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- VITIS_LOOP_16_2  |        2|       30|         2|          2|          2|  1 ~ 15|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.79>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [../homework2/bubble_sort.cpp:4->../homework2/bubble_sort.cpp:20]   --->   Operation 5 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %arr, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%indvars_iv6_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %indvars_iv6"   --->   Operation 7 'read' 'indvars_iv6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.38ns)   --->   "%store_ln4 = store i4 0, i4 %j" [../homework2/bubble_sort.cpp:4->../homework2/bubble_sort.cpp:20]   --->   Operation 8 'store' 'store_ln4' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body5"   --->   Operation 9 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%j_1 = load i4 %j" [../homework2/bubble_sort.cpp:19]   --->   Operation 10 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.70ns)   --->   "%icmp_ln16 = icmp_eq  i4 %j_1, i4 %indvars_iv6_read" [../homework2/bubble_sort.cpp:16]   --->   Operation 11 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.70ns)   --->   "%add_ln19 = add i4 %j_1, i4 1" [../homework2/bubble_sort.cpp:19]   --->   Operation 12 'add' 'add_ln19' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln16 = br i1 %icmp_ln16, void %for.body5.split, void %for.inc10.exitStub" [../homework2/bubble_sort.cpp:16]   --->   Operation 13 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i4 %j_1" [../homework2/bubble_sort.cpp:16]   --->   Operation 14 'zext' 'zext_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%arr_addr = getelementptr i32 %arr, i64 0, i64 %zext_ln16" [../homework2/bubble_sort.cpp:19]   --->   Operation 15 'getelementptr' 'arr_addr' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 16 [2/2] (0.69ns)   --->   "%temp = load i4 %arr_addr" [../homework2/bubble_sort.cpp:19]   --->   Operation 16 'load' 'temp' <Predicate = (!icmp_ln16)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln19 = zext i4 %add_ln19" [../homework2/bubble_sort.cpp:19]   --->   Operation 17 'zext' 'zext_ln19' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%arr_addr_1 = getelementptr i32 %arr, i64 0, i64 %zext_ln19" [../homework2/bubble_sort.cpp:19]   --->   Operation 18 'getelementptr' 'arr_addr_1' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (0.69ns)   --->   "%arr_load_1 = load i4 %arr_addr_1" [../homework2/bubble_sort.cpp:19]   --->   Operation 19 'load' 'arr_load_1' <Predicate = (!icmp_ln16)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_1 : Operation 32 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 32 'ret' 'ret_ln0' <Predicate = (icmp_ln16)> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 2.27>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln18 = specpipeline void @_ssdm_op_SpecPipeline, i32 2, i32 0, i32 0, i32 0, void @empty_0" [../homework2/bubble_sort.cpp:18]   --->   Operation 20 'specpipeline' 'specpipeline_ln18' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln16 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 15, i64 8" [../homework2/bubble_sort.cpp:16]   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln16' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [../homework2/bubble_sort.cpp:16]   --->   Operation 22 'specloopname' 'specloopname_ln16' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/2] (0.69ns)   --->   "%temp = load i4 %arr_addr" [../homework2/bubble_sort.cpp:19]   --->   Operation 23 'load' 'temp' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 24 [1/2] (0.69ns)   --->   "%arr_load_1 = load i4 %arr_addr_1" [../homework2/bubble_sort.cpp:19]   --->   Operation 24 'load' 'arr_load_1' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 25 [1/1] (0.88ns)   --->   "%icmp_ln19 = icmp_sgt  i32 %temp, i32 %arr_load_1" [../homework2/bubble_sort.cpp:19]   --->   Operation 25 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln19 = br i1 %icmp_ln19, void %for.inc, void %if.then" [../homework2/bubble_sort.cpp:19]   --->   Operation 26 'br' 'br_ln19' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.69ns)   --->   "%store_ln7 = store i32 %arr_load_1, i4 %arr_addr" [../homework2/bubble_sort.cpp:7->../homework2/bubble_sort.cpp:20]   --->   Operation 27 'store' 'store_ln7' <Predicate = (icmp_ln19)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 28 [1/1] (0.69ns)   --->   "%store_ln8 = store i32 %temp, i4 %arr_addr_1" [../homework2/bubble_sort.cpp:8->../homework2/bubble_sort.cpp:20]   --->   Operation 28 'store' 'store_ln8' <Predicate = (icmp_ln19)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln20 = br void %for.inc" [../homework2/bubble_sort.cpp:20]   --->   Operation 29 'br' 'br_ln20' <Predicate = (icmp_ln19)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.38ns)   --->   "%store_ln4 = store i4 %add_ln19, i4 %j" [../homework2/bubble_sort.cpp:4->../homework2/bubble_sort.cpp:20]   --->   Operation 30 'store' 'store_ln4' <Predicate = true> <Delay = 0.38>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln16 = br void %for.body5" [../homework2/bubble_sort.cpp:16]   --->   Operation 31 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 25.000ns, clock uncertainty: 6.750ns.
+
+ <State 1>: 1.794ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln4', ../homework2/bubble_sort.cpp:4->../homework2/bubble_sort.cpp:20) of constant 0 on local variable 'i', ../homework2/bubble_sort.cpp:4->../homework2/bubble_sort.cpp:20 [6]  (0.387 ns)
+	'load' operation 4 bit ('j', ../homework2/bubble_sort.cpp:19) on local variable 'i', ../homework2/bubble_sort.cpp:4->../homework2/bubble_sort.cpp:20 [9]  (0.000 ns)
+	'add' operation 4 bit ('add_ln19', ../homework2/bubble_sort.cpp:19) [11]  (0.708 ns)
+	'getelementptr' operation 4 bit ('arr_addr_1', ../homework2/bubble_sort.cpp:19) [21]  (0.000 ns)
+	'load' operation 32 bit ('arr_load_1', ../homework2/bubble_sort.cpp:19) on array 'arr' [22]  (0.699 ns)
+
+ <State 2>: 2.278ns
+The critical path consists of the following:
+	'load' operation 32 bit ('temp', ../homework2/bubble_sort.cpp:19) on array 'arr' [19]  (0.699 ns)
+	'icmp' operation 1 bit ('icmp_ln19', ../homework2/bubble_sort.cpp:19) [23]  (0.880 ns)
+	'store' operation 0 bit ('store_ln7', ../homework2/bubble_sort.cpp:7->../homework2/bubble_sort.cpp:20) of variable 'arr_load_1', ../homework2/bubble_sort.cpp:19 on array 'arr' [26]  (0.699 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

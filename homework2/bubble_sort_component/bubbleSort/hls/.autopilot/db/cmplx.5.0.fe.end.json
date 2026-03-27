@@ -1,0 +1,40 @@
+{
+    "0": {
+        "name": "bubbleSort",
+        "file": "bubble_sort.cpp",
+        "fileloc": "11",
+        "instructions": "21",
+        "total_instructions": "47",
+        "calls": "1",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "1": {
+        "name": "bubbleSort_Pipeline_VITIS_LOOP_16_2",
+        "file": "..\/homework2\/bubble_sort.cpp",
+        "fileloc": "16",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "1",
+            "T": "2"
+        },
+        "stores": {
+            "L": "2",
+            "T": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

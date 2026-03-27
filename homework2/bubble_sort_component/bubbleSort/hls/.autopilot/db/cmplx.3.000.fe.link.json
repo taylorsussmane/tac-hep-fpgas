@@ -1,0 +1,29 @@
+{
+  "0": {
+    "basicblocks": 15,
+    "calls": "1",
+    "file": "bubble_sort.cpp",
+    "fileloc": 11,
+    "instructions": 33,
+    "loads": {
+      "T": 2
+    },
+    "name": "bubbleSort",
+    "total_instructions": 46
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "bubble_sort.cpp",
+    "fileloc": 4,
+    "instructions": 13,
+    "loads": {
+      "L": 2
+    },
+    "name": "swap",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 13
+  }
+}
