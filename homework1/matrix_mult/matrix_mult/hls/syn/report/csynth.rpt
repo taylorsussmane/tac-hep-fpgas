@@ -1,0 +1,146 @@
+
+
+================================================================
+== Synthesis Summary Report of 'matrix_mult'
+================================================================
++ General Information: 
+    * Date:           Tue Mar 17 11:13:33 2026
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        matrix_mult
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flga2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |              Modules             | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |         |           |           |     |
+    |              & Loops             | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +----------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ matrix_mult                     |    II|  0.74|      502|  5.020e+03|         -|      500|     -|    rewind|     -|  6 (~0%)|  211 (~0%)|  964 (~0%)|    -|
+    | o VITIS_LOOP_5_1_VITIS_LOOP_6_2  |    II|  7.30|      500|  5.000e+03|         6|        5|   100|       yes|     -|        -|          -|          -|    -|
+    +----------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++------------+-----------+----------+
+| Port       | Direction | Bitwidth |
++------------+-----------+----------+
+| A_address0 | out       | 7        |
+| A_address1 | out       | 7        |
+| A_q0       | in        | 32       |
+| A_q1       | in        | 32       |
+| B_address0 | out       | 7        |
+| B_address1 | out       | 7        |
+| B_q0       | in        | 32       |
+| B_q1       | in        | 32       |
+| C_address0 | out       | 7        |
+| C_d0       | out       | 32       |
++------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| A        | in        | int*     |
+| B        | in        | int*     |
+| C        | out       | int*     |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+----------+
+| Argument | HW Interface | HW Type | HW Usage |
++----------+--------------+---------+----------+
+| A        | A_address0   | port    | offset   |
+| A        | A_ce0        | port    |          |
+| A        | A_q0         | port    |          |
+| A        | A_address1   | port    | offset   |
+| A        | A_ce1        | port    |          |
+| A        | A_q1         | port    |          |
+| B        | B_address0   | port    | offset   |
+| B        | B_ce0        | port    |          |
+| B        | B_q0         | port    |          |
+| B        | B_address1   | port    | offset   |
+| B        | B_ce1        | port    |          |
+| B        | B_q1         | port    |          |
+| C        | C_address0   | port    | offset   |
+| C        | C_ce0        | port    |          |
+| C        | C_we0        | port    |          |
+| C        | C_d0         | port    |          |
++----------+--------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+------------+--------+----------+---------+
+| Name                    | DSP | Pragma | Variable   | Op     | Impl     | Latency |
++-------------------------+-----+--------+------------+--------+----------+---------+
+| + matrix_mult           | 6   |        |            |        |          |         |
+|   add_ln5_fu_358_p2     |     |        | add_ln5    | add    | fabric   | 0       |
+|   select_ln5_fu_364_p3  |     |        | select_ln5 | select | auto_sel | 0       |
+|   i_fu_372_p3           |     |        | i          | select | auto_sel | 0       |
+|   empty_fu_404_p2       |     |        | empty      | add    | fabric   | 0       |
+|   empty_7_fu_467_p2     |     |        | empty_7    | add    | fabric   | 0       |
+|   empty_8_fu_477_p2     |     |        | empty_8    | add    | fabric   | 0       |
+|   empty_9_fu_518_p2     |     |        | empty_9    | add    | fabric   | 0       |
+|   empty_10_fu_528_p2    |     |        | empty_10   | add    | fabric   | 0       |
+|   empty_11_fu_562_p2    |     |        | empty_11   | add    | fabric   | 0       |
+|   empty_12_fu_572_p2    |     |        | empty_12   | add    | fabric   | 0       |
+|   empty_13_fu_617_p2    |     |        | empty_13   | add    | fabric   | 0       |
+|   empty_14_fu_627_p2    |     |        | empty_14   | add    | fabric   | 0       |
+|   add_ln9_8_fu_451_p2   |     |        | add_ln9_8  | add    | fabric   | 0       |
+|   add_ln9_9_fu_490_p2   |     |        | add_ln9_9  | add    | fabric   | 0       |
+|   add_ln9_10_fu_501_p2  |     |        | add_ln9_10 | add    | fabric   | 0       |
+|   add_ln9_11_fu_541_p2  |     |        | add_ln9_11 | add    | fabric   | 0       |
+|   add_ln9_12_fu_551_p2  |     |        | add_ln9_12 | add    | fabric   | 0       |
+|   add_ln9_13_fu_582_p2  |     |        | add_ln9_13 | add    | fabric   | 0       |
+|   add_ln9_14_fu_592_p2  |     |        | add_ln9_14 | add    | fabric   | 0       |
+|   add_ln9_15_fu_649_p2  |     |        | add_ln9_15 | add    | fabric   | 0       |
+|   add_ln11_fu_659_p2    |     |        | add_ln11   | add    | fabric   | 0       |
+|   mul_32s_32s_32_1_1_U1 | 3   |        | mul_ln9    | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1 | 3   |        | mul_ln9_1  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1 | 3   |        | mul_ln9_2  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1 | 3   |        | mul_ln9_3  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2 | 3   |        | mul_ln9_4  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2 | 3   |        | mul_ln9_5  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U1 | 3   |        | mul_ln9_6  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2 | 3   |        | mul_ln9_7  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2 | 3   |        | mul_ln9_8  | mul    | auto     | 0       |
+|   mul_32s_32s_32_1_1_U2 | 3   |        | mul_ln9_9  | mul    | auto     | 0       |
+|   add_ln9_fu_512_p2     |     |        | add_ln9    | add    | fabric   | 0       |
+|   j_fu_663_p2           |     |        | j          | add    | fabric   | 0       |
+|   add_ln5_1_fu_668_p2   |     |        | add_ln5_1  | add    | fabric   | 0       |
+|   icmp_ln6_fu_674_p2    |     |        | icmp_ln6   | seteq  | auto     | 0       |
+|   icmp_ln5_fu_680_p2    |     |        | icmp_ln5   | seteq  | auto     | 0       |
++-------------------------+-----+--------+------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

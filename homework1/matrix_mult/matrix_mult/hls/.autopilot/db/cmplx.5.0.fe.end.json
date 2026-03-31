@@ -1,0 +1,22 @@
+{
+    "0": {
+        "name": "matrix_mult",
+        "file": "..\/matrix_mult.cpp",
+        "fileloc": "4",
+        "instructions": "144",
+        "total_instructions": "144",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "3",
+            "T": "20"
+        },
+        "stores": {
+            "L": "6",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

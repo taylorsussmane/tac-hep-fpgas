@@ -1,0 +1,11 @@
+{
+  "name": "matrix_add",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matrix_add_config.cfg"
+    ],
+    "work_dir": "matrix_add"
+  }
+}

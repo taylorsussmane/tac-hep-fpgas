@@ -1,0 +1,22 @@
+---
+MainSourceFile:  /scratch/tsussman/matrix_add/matrix_add/hls/.autopilot/db/matrix_add.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_6_1:  '
+    FileOffset:      6
+    FilePath:        /scratch/tsussman/matrix_add.cpp
+    Replacements:    
+      - FilePath:        /scratch/tsussman/matrix_add/matrix_add/hls/.autopilot/db/matrix_add.pp.0.cpp
+        Offset:          786145
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_6_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_7_2:  '
+    FileOffset:      7
+    FilePath:        /scratch/tsussman/matrix_add.cpp
+    Replacements:    
+      - FilePath:        /scratch/tsussman/matrix_add/matrix_add/hls/.autopilot/db/matrix_add.pp.0.cpp
+        Offset:          786184
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_7_2: '
+...

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<callgraph:CallGraph xmlns:callgraph="http://www.xilinx.com/act/callgraph">
+  <DirectCall count="0" file="../matrix_add_tb.cpp" id="78" line="21">
+    <caller function="_f205"/>
+    <callee function="_f213"/>
+  </DirectCall>
+  <Function file="../matrix_add_tb.cpp" id="_f205" line="6" name="main"/>
+  <Function file="../matrix_add.cpp" id="_f213" line="4" name="matrix_add"/>
+</callgraph:CallGraph>
