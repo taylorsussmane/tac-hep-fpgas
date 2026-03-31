@@ -1,0 +1,150 @@
+
+
+================================================================
+== Vitis HLS Report for 'bubbleSort'
+================================================================
+* Date:           Fri Mar 27 13:37:43 2026
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        bubbleSort
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-fsga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  25.00 ns|  2.278 ns|     6.75 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max    | min | max |   Type  |
+    +---------+---------+----------+-----------+-----+-----+---------+
+    |       91|      511|  2.275 us|  12.775 us|   92|  512|       no|
+    +---------+---------+----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_13_1  |       90|      510|    6 ~ 34|          -|          -|    15|        no|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [../homework2/bubble_sort.cpp:13]   --->   Operation 4 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%indvars_iv6 = alloca i32 1"   --->   Operation 5 'alloca' 'indvars_iv6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%spectopmodule_ln11 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [../homework2/bubble_sort.cpp:11]   --->   Operation 6 'spectopmodule' 'spectopmodule_ln11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %arr, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %arr"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln0 = store i4 15, i4 %indvars_iv6"   --->   Operation 9 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 10 [1/1] (0.38ns)   --->   "%store_ln13 = store i4 0, i4 %i" [../homework2/bubble_sort.cpp:13]   --->   Operation 10 'store' 'store_ln13' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln13 = br void %VITIS_LOOP_16_2" [../homework2/bubble_sort.cpp:13]   --->   Operation 11 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.80>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%i_1 = load i4 %i" [../homework2/bubble_sort.cpp:13]   --->   Operation 12 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.70ns)   --->   "%icmp_ln13 = icmp_eq  i4 %i_1, i4 15" [../homework2/bubble_sort.cpp:13]   --->   Operation 13 'icmp' 'icmp_ln13' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (0.70ns)   --->   "%i_2 = add i4 %i_1, i4 1" [../homework2/bubble_sort.cpp:13]   --->   Operation 14 'add' 'i_2' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln13 = br i1 %icmp_ln13, void %VITIS_LOOP_16_2.split, void %for.end12" [../homework2/bubble_sort.cpp:13]   --->   Operation 15 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%indvars_iv6_load = load i4 %indvars_iv6" [../homework2/bubble_sort.cpp:13]   --->   Operation 16 'load' 'indvars_iv6_load' <Predicate = (!icmp_ln13)> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (1.09ns)   --->   "%call_ln13 = call void @bubbleSort_Pipeline_VITIS_LOOP_16_2, i4 %indvars_iv6_load, i32 %arr" [../homework2/bubble_sort.cpp:13]   --->   Operation 17 'call' 'call_ln13' <Predicate = (!icmp_ln13)> <Delay = 1.09> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 18 [1/1] (0.70ns)   --->   "%add_ln13 = add i4 %indvars_iv6_load, i4 15" [../homework2/bubble_sort.cpp:13]   --->   Operation 18 'add' 'add_ln13' <Predicate = (!icmp_ln13)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.38ns)   --->   "%store_ln13 = store i4 %add_ln13, i4 %indvars_iv6" [../homework2/bubble_sort.cpp:13]   --->   Operation 19 'store' 'store_ln13' <Predicate = (!icmp_ln13)> <Delay = 0.38>
+ST_2 : Operation 20 [1/1] (0.38ns)   --->   "%store_ln13 = store i4 %i_2, i4 %i" [../homework2/bubble_sort.cpp:13]   --->   Operation 20 'store' 'store_ln13' <Predicate = (!icmp_ln13)> <Delay = 0.38>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln23 = ret" [../homework2/bubble_sort.cpp:23]   --->   Operation 21 'ret' 'ret_ln23' <Predicate = (icmp_ln13)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.48>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln13 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 15, i64 15, i64 15" [../homework2/bubble_sort.cpp:13]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln13' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [../homework2/bubble_sort.cpp:13]   --->   Operation 23 'specloopname' 'specloopname_ln13' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/2] (1.48ns)   --->   "%call_ln13 = call void @bubbleSort_Pipeline_VITIS_LOOP_16_2, i4 %indvars_iv6_load, i32 %arr" [../homework2/bubble_sort.cpp:13]   --->   Operation 24 'call' 'call_ln13' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln13 = br void %VITIS_LOOP_16_2" [../homework2/bubble_sort.cpp:13]   --->   Operation 25 'br' 'br_ln13' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 25.000ns, clock uncertainty: 6.750ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation 4 bit ('indvars_iv6') [3]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 15 on local variable 'indvars_iv6' [7]  (0.387 ns)
+
+ <State 2>: 1.803ns
+The critical path consists of the following:
+	'load' operation 4 bit ('i', ../homework2/bubble_sort.cpp:13) on local variable 'i', ../homework2/bubble_sort.cpp:13 [11]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln13', ../homework2/bubble_sort.cpp:13) [12]  (0.708 ns)
+	'call' operation 0 bit ('call_ln13', ../homework2/bubble_sort.cpp:13) to 'bubbleSort_Pipeline_VITIS_LOOP_16_2' [19]  (1.095 ns)
+
+ <State 3>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln13', ../homework2/bubble_sort.cpp:13) to 'bubbleSort_Pipeline_VITIS_LOOP_16_2' [19]  (1.482 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

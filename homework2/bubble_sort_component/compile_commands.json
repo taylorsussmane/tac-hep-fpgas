@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "/scratch/tsussman/bubble_sort_component",
+    "arguments": [
+      "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/scratch/tsussman/homework2/bubble_sort.cpp"
+    ],
+    "file": "/scratch/tsussman/homework2/bubble_sort.cpp"
+  }
+]

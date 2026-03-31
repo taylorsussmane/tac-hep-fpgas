@@ -1,0 +1,10 @@
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_6_1
+  - String:          '> at '
+  - LoopLoc:         '../homework2/standard_vector_add.cpp:6:21'
+  - String:          ' '
+...

@@ -1,0 +1,58 @@
+---
+MainSourceFile:  /scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1223_1:  '
+    FileOffset:      1223
+    FilePath:        /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp
+        Offset:          832670
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp
+        Offset:          1060624
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp
+        Offset:          1061088
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp
+        Offset:          1061553
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /afs/hep.wisc.edu/cms/sw/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp
+        Offset:          1345107
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_10_1:  '
+    FileOffset:      10
+    FilePath:        /scratch/tsussman/homework2/aribtrary_vector_add.cpp
+    Replacements:    
+      - FilePath:        /scratch/tsussman/arbitrary_vector_add_hls_component/vector_add/hls/.autopilot/db/aribtrary_vector_add.pp.0.cpp
+        Offset:          1713750
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_10_1: '
+...

@@ -1,0 +1,11 @@
+{
+  "name": "arbitrary_vector_add_hls_component",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "arbitrary_vector_add_hls_config.cfg"
+    ],
+    "work_dir": "vector_add"
+  }
+}

@@ -1,0 +1,46 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../homework2/bubble_sort.cpp, Line: 12, Column: 0 }
+Function:        _Z10bubbleSortPi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'swap(int*, int, int)'
+    DebugLoc:        { File: ../homework2/bubble_sort.cpp, Line: 5, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'bubbleSort(int*)'
+    DebugLoc:        { File: ../homework2/bubble_sort.cpp, Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: ../homework2/bubble_sort.cpp, Line: 13, Column: 22 }
+Function:        _Z10bubbleSortPi
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../homework2/bubble_sort.cpp, Line: 13, Column: 22 }
+Function:        _Z10bubbleSortPi
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  bubbleSort
+  - String:          ' '
+  - PragmaSrcLoc:    '../homework2/bubble_sort.cpp:13:22'
+    DebugLoc:        { File: ../homework2/bubble_sort.cpp, Line: 13, Column: 22 }
+  - LoopName:        VITIS_LOOP_13_1
+  - String:          ' '
+  - LoopLoc:         '../homework2/bubble_sort.cpp:13:22'
+    DebugLoc:        { File: ../homework2/bubble_sort.cpp, Line: 13, Column: 22 }
+  - String:          ' '
+...

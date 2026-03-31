@@ -1,0 +1,31 @@
+---
+MainSourceFile:  /scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
+    FilePath:        /scratch/tsussman/homework2/bubble_sort.cpp
+    Replacements:    
+      - FilePath:        /scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp
+        Offset:          786259
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_2:  '
+    FileOffset:      16
+    FilePath:        /scratch/tsussman/homework2/bubble_sort.cpp
+    Replacements:    
+      - FilePath:        /scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp
+        Offset:          786307
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_32_1:  '
+    FileOffset:      32
+    FilePath:        /scratch/tsussman/homework2/bubble_sort.cpp
+    Replacements:    
+      - FilePath:        /scratch/tsussman/bubble_sort_component/bubbleSort/hls/.autopilot/db/bubble_sort.pp.0.cpp
+        Offset:          786576
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_32_1: '
+...

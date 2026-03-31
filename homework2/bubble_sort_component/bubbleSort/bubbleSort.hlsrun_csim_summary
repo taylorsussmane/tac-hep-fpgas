@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "/scratch/tsussman/bubble_sort_component/bubbleSort/bubbleSort.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Mar 27 12:47:25 2026",
+ "timestampMillis": "1774633645168",
+ "buildStep": {
+  "cmdId": "232ec631-357e-4426-83da-6dc40d0cd289",
+  "name": "vitis-run",
+  "logFile": "/scratch/tsussman/bubble_sort_component/bubbleSort/logs/bubbleSort.steps.log",
+  "commandLine": "/afs/hep.wisc.edu/cms/sw/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /scratch/tsussman/bubble_sort_component/bubble_sort_hls_config.cfg --work_dir bubbleSort ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/scratch/tsussman/bubble_sort_component/bubble_sort_hls_config.cfg",
+   "--work_dir",
+   "bubbleSort"
+  ],
+  "iniFiles": [],
+  "cwd": "/scratch/tsussman/bubble_sort_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 12:47:25 2026",
+ "timestampMillis": "1774633645169",
+ "status": {
+  "cmdId": "232ec631-357e-4426-83da-6dc40d0cd289",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Mar 27 12:47:36 2026",
+ "timestampMillis": "1774633656939",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "bubbleSort",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/scratch/tsussman/homework2/bubble_sort.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Mar 27 12:47:36 2026",
+ "timestampMillis": "1774633656941",
+ "buildStep": {
+  "cmdId": "ca19fd01-c0da-46dc-8164-b92d508fa583",
+  "name": "csim_design",
+  "logFile": "/scratch/tsussman/bubble_sort_component/bubbleSort/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/scratch/tsussman/bubble_sort_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 12:47:36 2026",
+ "timestampMillis": "1774633656941",
+ "status": {
+  "cmdId": "ca19fd01-c0da-46dc-8164-b92d508fa583",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 12:47:38 2026",
+ "timestampMillis": "1774633658825",
+ "status": {
+  "cmdId": "ca19fd01-c0da-46dc-8164-b92d508fa583",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Mar 27 12:47:38 2026",
+ "timestampMillis": "1774633658995",
+ "status": {
+  "cmdId": "232ec631-357e-4426-83da-6dc40d0cd289",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 12:47:38 2026",
+ "timestampMillis": "1774633658996",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Mar 27 12:47:38 2026",
+ "timestampMillis": "1774633658997",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
