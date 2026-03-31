@@ -1,20 +1,21 @@
 # Ignore build output directory
-/build
-/export
+build/
+export/
 
 # Ignore object files and dependent files
-.o
-.d
+*.o
+*.d
 
 #Ignore logs folder and log files
-/logs
-.log
+logs/
+log/
+*.log
 
 #Ignore lock files
-.lock
+*.lock
 
-.bin
-.pdi
-.peers.ini
-.repo.yaml
-.vitisWorkspace.json
+*.bin
+*.pdi
+*.peers.ini
+*.repo.yaml
+*.vitisWorkspace.json
